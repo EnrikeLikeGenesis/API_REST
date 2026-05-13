@@ -20,7 +20,6 @@ document.getElementById("personajes").innerHTML += `
                 </div>
             </div>
         </div>
-
         `;
     });
 });
