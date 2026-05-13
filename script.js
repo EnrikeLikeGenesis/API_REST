@@ -22,4 +22,8 @@ document.getElementById("personajes").innerHTML += `
         </div>
         `;
     });
+
+    functifunction getRandomInt() {
+  return Math.floor(Math.random() * 20);
+    
 });
