@@ -23,7 +23,19 @@ document.getElementById("personajes").innerHTML += `
         `;
     });
 
-    functifunction getRandomInt() {
-  return Math.floor(Math.random() * 20);
+ 
     
 });
+
+
+function GenerarPersonaje(){
+let NumeroAleatorio=Math.floor(Math.random() * 20);
+fetch("https://rickandmortyapi.com/api/character")
+.then(respuesta => respuesta.json())
+.then(datos => {
+    document.getElementById("nombre").innerText=datos.results[NumeroAleatorio].name;
+    document.getElementById("id_personaje").innerText=datos.results[NumeroAleatorio].id;
+    document.getElementById("imagen").src=datos.results[NumeroAleatorio].image;
+    });
+
+}
