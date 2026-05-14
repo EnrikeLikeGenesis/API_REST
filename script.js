@@ -35,6 +35,8 @@ fetch("https://rickandmortyapi.com/api/character")
 .then(datos => {
     document.getElementById("nombre").innerText=datos.results[NumeroAleatorio].name;
     document.getElementById("id_personaje").innerText=datos.results[NumeroAleatorio].id;
+    document.getElementById("Especie").innerText=datos.results[NumeroAleatorio].species;
+    document.getElementById("Estado").innerText=datos.results[NumeroAleatorio].status;
     document.getElementById("imagen").src=datos.results[NumeroAleatorio].image;
     });
 

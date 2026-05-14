@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,32 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
 
     <div class="container mt-5">
-        <h1 class="text-center mb-4">
+        <h1 class="text-center mb-4 text-white">
             Personajes de Rick and Morty
         </h1>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-4">
             <div class="col-6">
                 <div class="card text-center">
                     <div class="card-header">
-                        <img id="imagen" alt=""class="card-img-top">
+                        <img id="imagen" alt="" class="card-img-top">
                     </div>
                     <div class="card-body">
-                    <div id="nombre">Nombre de Personaje</div>
-                    <div id="id_personaje">Id de Personaje</div>
+                        <div id="nombre" class="text-uppercase fw-bold text-decoration-underline mb-2">
+                            <h5>Nombre de Personaje</h5>
+                        </div>
+                        <div id="Especie" class="fw-medium mb-1">
+                            <h5>Especie</h5>
+                        </div>
+                        <div id="Estado" class="fw-medium mb-1">
+                            <h5>Estado</h5>
+                        </div>
+                        <div id="id_personaje" class=" fw-medium mb-1">
+                            <h5>Id de Personaje</h5>
+                        </div>
                         <button onclick="GenerarPersonaje()" class="btn btn-success">Generar Personajes</button>
                     </div>
                 </div>
